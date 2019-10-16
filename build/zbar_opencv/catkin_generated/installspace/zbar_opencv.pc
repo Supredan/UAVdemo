@@ -1,0 +1,8 @@
+prefix=/home/pi/UAV_demo/install
+
+Name: zbar_opencv
+Description: Description of zbar_opencv
+Version: 0.3.6
+Cflags: -I/home/pi/UAV_demo/install/include
+Libs: -L/home/pi/UAV_demo/install/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs crazyflie_cpp

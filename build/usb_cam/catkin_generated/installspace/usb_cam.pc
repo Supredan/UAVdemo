@@ -1,0 +1,8 @@
+prefix=/home/pi/UAV_demo/install
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.6
+Cflags: -I/home/pi/UAV_demo/install/include
+Libs: -L/home/pi/UAV_demo/install/lib -lusb_cam
+Requires: 

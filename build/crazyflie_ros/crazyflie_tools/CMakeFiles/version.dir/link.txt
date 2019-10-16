@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11  -rdynamic CMakeFiles/version.dir/src/version.cpp.o  -o /home/pi/UAV_demo/devel/lib/crazyflie_tools/version -Wl,-rpath,/home/pi/UAV_demo/devel/lib /home/pi/UAV_demo/devel/lib/libcrazyflie_cpp.so -lboost_program_options -lusb-1.0 

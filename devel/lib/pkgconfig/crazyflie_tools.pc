@@ -1,0 +1,8 @@
+prefix=/home/pi/UAV_demo/devel
+
+Name: crazyflie_tools
+Description: Description of crazyflie_tools
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/pi/UAV_demo/devel/lib 
+Requires: crazyflie_cpp
