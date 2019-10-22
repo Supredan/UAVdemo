@@ -4,6 +4,7 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
+subdirs("gtest")
 subdirs("crazyflie_ros/crazyflie")
 subdirs("crazyflie_ros/crazyflie_cpp")
 subdirs("crazyflie_ros/crazyflie_description")

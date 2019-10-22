@@ -84,7 +84,6 @@ crazyflie_server_EXTERNAL_OBJECTS =
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /opt/ros/melodic/lib/libactionlib.so
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /opt/ros/melodic/lib/libmessage_filters.so
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /opt/ros/melodic/lib/libroscpp.so
-/home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /usr/lib/arm-linux-gnueabihf/libpthread.so
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
 /home/pi/UAV_demo/devel/lib/crazyflie_driver/crazyflie_server: /opt/ros/melodic/lib/libxmlrpcpp.so

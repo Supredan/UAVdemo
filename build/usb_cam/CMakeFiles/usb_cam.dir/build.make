@@ -92,7 +92,6 @@ usb_cam_EXTERNAL_OBJECTS =
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /opt/ros/melodic/lib/libcamera_info_manager.so
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /opt/ros/melodic/lib/libcamera_calibration_parsers.so
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /opt/ros/melodic/lib/libroscpp.so
-/home/pi/UAV_demo/devel/lib/libusb_cam.so: /usr/lib/arm-linux-gnueabihf/libpthread.so
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
 /home/pi/UAV_demo/devel/lib/libusb_cam.so: /opt/ros/melodic/lib/librosconsole.so

@@ -225,6 +225,192 @@ clean: CMakeFiles/clean_test_results.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory gtest
+
+# Convenience name for "all" pass in the directory.
+gtest/all: gtest/googlemock/all
+
+.PHONY : gtest/all
+
+# Convenience name for "clean" pass in the directory.
+gtest/clean: gtest/googlemock/clean
+
+.PHONY : gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtest/preinstall: gtest/googlemock/preinstall
+
+.PHONY : gtest/preinstall
+
+#=============================================================================
+# Directory level rules for directory gtest/googlemock
+
+# Convenience name for "all" pass in the directory.
+gtest/googlemock/all: gtest/googlemock/gtest/all
+
+.PHONY : gtest/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+gtest/googlemock/clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+gtest/googlemock/clean: gtest/googlemock/CMakeFiles/gmock.dir/clean
+gtest/googlemock/clean: gtest/googlemock/gtest/clean
+
+.PHONY : gtest/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
+
+.PHONY : gtest/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target gtest/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmock.dir/all
+gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=81 "Built target gmock_main"
+.PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
+.PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: gtest/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target gtest/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=80 "Built target gmock"
+.PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
+.PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: gtest/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+gtest/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : gtest/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: gtest/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory gtest/googlemock/gtest
+
+# Convenience name for "all" pass in the directory.
+gtest/googlemock/gtest/all:
+
+.PHONY : gtest/googlemock/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+gtest/googlemock/gtest/clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : gtest/googlemock/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+gtest/googlemock/gtest/preinstall:
+
+.PHONY : gtest/googlemock/gtest/preinstall
+
+#=============================================================================
+# Target rules for target gtest/googlemock/gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=84 "Built target gtest_main"
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target gtest/googlemock/gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=82,83 "Built target gtest"
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+# Build rule for subdir invocation for target.
+gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: gtest/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+.PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory crazyflie_ros/crazyflie
 
 # Convenience name for "all" pass in the directory.
@@ -299,7 +485,7 @@ crazyflie_ros/crazyflie_cpp/preinstall:
 crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all:
 	$(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build.make crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=8,9,10,11,12 "Built target crazyflie_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=7,8,9,10,11 "Built target crazyflie_cpp"
 .PHONY : crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 
 # Include target in all.
@@ -429,7 +615,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/battery.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=92 "Built target reboot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=92,93 "Built target reboot"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/all
 
 # Include target in all.
@@ -439,7 +625,7 @@ all: crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/rule
@@ -466,7 +652,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/reboot.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=84,85 "Built target listLogVariables"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=85,86 "Built target listLogVariables"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/all
 
 # Include target in all.
@@ -503,7 +689,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/listLogVariables.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=93,94 "Built target scan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=94 "Built target scan"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/all
 
 # Include target in all.
@@ -513,7 +699,7 @@ all: crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/rule
@@ -540,7 +726,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/scan.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=83 "Built target flash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=78,79 "Built target flash"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/all
 
 # Include target in all.
@@ -550,7 +736,7 @@ all: crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/rule
@@ -577,7 +763,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/flash.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=86 "Built target listMemories"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=87 "Built target listMemories"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listMemories.dir/all
 
 # Include target in all.
@@ -651,7 +837,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/version.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=87,88 "Built target listParams"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=88 "Built target listParams"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/all
 
 # Include target in all.
@@ -661,7 +847,7 @@ all: crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/listParams.dir/rule
@@ -762,7 +948,7 @@ clean: crazyflie_ros/crazyflie_tools/CMakeFiles/comCheck.dir/clean
 crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/all: crazyflie_ros/crazyflie_cpp/CMakeFiles/crazyflie_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/build.make crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=89 "Built target log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=89,90 "Built target log"
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/all
 
 # Include target in all.
@@ -772,7 +958,7 @@ all: crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_tools/CMakeFiles/log.dir/rule
@@ -1248,7 +1434,7 @@ clean: crazyflie_ros/crazyflie_demo/CMakeFiles/std_msgs_generate_messages_py.dir
 crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/all:
 	$(MAKE) -f crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/build.make crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/build.make crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=90,91 "Built target quadrotor_teleop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=91 "Built target quadrotor_teleop"
 .PHONY : crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/all
 
 # Include target in all.
@@ -1258,7 +1444,7 @@ all: crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/rule
@@ -1525,7 +1711,7 @@ clean: crazyflie_ros/crazyflie_controller/CMakeFiles/actionlib_generate_messages
 crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/all:
 	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build.make crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=6,7 "Built target crazyflie_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=6 "Built target crazyflie_controller"
 .PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/all
 
 # Include target in all.
@@ -1535,7 +1721,7 @@ all: crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_controller/CMakeFiles/crazyflie_controller.dir/rule
@@ -2495,12 +2681,12 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target crazyflie_driver_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37 "Built target crazyflie_driver_generate_messages_eus"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_eus.dir/rule
@@ -2642,7 +2828,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target crazyflie_driver_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target crazyflie_driver_generate_messages_cpp"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2784,7 +2970,7 @@ all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_message
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 65
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages.dir/rule
@@ -3040,7 +3226,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_geneus.dir/all: crazy
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_geneus.dir/rule
@@ -3118,12 +3304,12 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nod
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target crazyflie_driver_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=51,52,53,54,55,56,57,58,59,60,61,62 "Built target crazyflie_driver_generate_messages_nodejs"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_nodejs.dir/rule
@@ -3151,7 +3337,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/all: crazyflie_ro
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_cpp.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=81,82 "Built target crazyflie_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=77 "Built target crazyflie_server"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/all
 
 # Include target in all.
@@ -3161,7 +3347,7 @@ all: crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/all
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 19
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_server.dir/rule
@@ -3271,7 +3457,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80 "Built target crazyflie_driver_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72,73,74,75,76 "Built target crazyflie_driver_generate_messages_py"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3418,7 +3604,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lis
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all: crazyflie_ros/crazyflie_driver/CMakeFiles/_crazyflie_driver_generate_messages_check_deps_crtpPacket.dir/all
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/depend
 	$(MAKE) -f crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build.make crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target crazyflie_driver_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/UAV_demo/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46,47,48,49,50 "Built target crazyflie_driver_generate_messages_lisp"
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3493,7 +3679,7 @@ crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gennodejs.dir/all: cr
 
 # Build rule for subdir invocation for target.
 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/UAV_demo/build/CMakeFiles 0
 .PHONY : crazyflie_ros/crazyflie_driver/CMakeFiles/crazyflie_driver_gennodejs.dir/rule

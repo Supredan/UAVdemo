@@ -80,7 +80,6 @@ quadrotor_teleop_EXTERNAL_OBJECTS =
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/src/quadrotor_teleop.cpp.o
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: crazyflie_ros/crazyflie_demo/CMakeFiles/quadrotor_teleop.dir/build.make
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: /opt/ros/melodic/lib/libroscpp.so
-/home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: /usr/lib/arm-linux-gnueabihf/libpthread.so
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: /usr/lib/arm-linux-gnueabihf/libboost_filesystem.so
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: /usr/lib/arm-linux-gnueabihf/libboost_signals.so
 /home/pi/UAV_demo/devel/lib/crazyflie_demo/quadrotor_teleop: /opt/ros/melodic/lib/librosconsole.so

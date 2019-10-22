@@ -2,4 +2,4 @@
 source_root_dir = "/home/pi/UAV_demo/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/pi/UAV_demo/devel;/home/pi/QR_code/devel;/opt/ros/melodic".split(';') if "/home/pi/UAV_demo/devel;/home/pi/QR_code/devel;/opt/ros/melodic" != "" else []
+underlay_workspaces = "/opt/ros/melodic".split(';') if "/opt/ros/melodic" != "" else []

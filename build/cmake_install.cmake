@@ -130,6 +130,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/pi/UAV_demo/build/gtest/cmake_install.cmake")
   include("/home/pi/UAV_demo/build/crazyflie_ros/crazyflie/cmake_install.cmake")
   include("/home/pi/UAV_demo/build/crazyflie_ros/crazyflie_cpp/cmake_install.cmake")
   include("/home/pi/UAV_demo/build/crazyflie_ros/crazyflie_description/cmake_install.cmake")
